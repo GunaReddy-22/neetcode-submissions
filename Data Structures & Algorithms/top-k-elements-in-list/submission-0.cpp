@@ -4,12 +4,12 @@ public:
 
         unordered_map<int,int> mp;
 
-        // count frequency
+        
         for(int num : nums){
             mp[num]++;
         }
 
-        // max heap
+        
         priority_queue<pair<int,int>> pq;
 
         for(auto it : mp){
@@ -18,7 +18,7 @@ public:
 
         vector<int> ans;
 
-        // take top k elements
+        
         while(k--){
             ans.push_back(pq.top().second);
             pq.pop();
